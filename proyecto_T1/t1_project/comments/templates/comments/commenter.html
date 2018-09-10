@@ -1,0 +1,8 @@
+<h1>Please enter your comment</h1>
+
+
+<form action="{% url 'comments:comment'%}" method="post">
+{% csrf_token %}
+<textarea name="commentText" id="commentText" cols="40" rows="5"></textarea>
+<input type="submit" value="Post comment">
+</form>
